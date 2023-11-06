@@ -1,4 +1,4 @@
-import socket 
+import socket.getaddrinfo 
 def get_ip(host):
     try:
         return socket.getaddrinfo(host, None)[0][4][0]
