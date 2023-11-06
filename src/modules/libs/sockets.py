@@ -1,3 +1,10 @@
+import socket 
+def get_ip(host):
+    try:
+        return socket.getaddrinfo(host, None)[0][4][0]
+    except socket.gaierror:
+        return None
+
 import orjson as json
 from urllib import request
 
