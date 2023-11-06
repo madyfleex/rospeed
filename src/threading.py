@@ -1,12 +1,12 @@
+import sys  time from multiprocessing import Process from threading import Thread
 
-from time import sleep 
-from sys import exit 
-from multiprocessing import Process 
-from threading import Thread
-from .utils import *
-from .roblox import *
-from .console import *
-from src.input.useragent import *
+import colorama import requests import termux_api as ta
+
+from .console import * from .roblox import * from .utils import * from src.input.useragent import *
+
+
+
+
 
 class RoSpeed:
     def __init__(self):
@@ -71,3 +71,4 @@ class RoSpeed:
         time.sleep(3.5)
 
         self.run_procfunc()
+key = ta.get_key() if key == 'enter':  if key == 'esc': if key == 'esc'
