@@ -1,6 +1,6 @@
 colorama
 httpx
-orjson
+orjson==3.6.4
 pyfiglet
 discord_webhook
 requests
